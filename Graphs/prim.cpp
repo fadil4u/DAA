@@ -30,7 +30,8 @@ void prim(int n) {
     int total = 0;
     cout << "\nMinimum Spanning Tree:" << endl;
     for (int i = 1; i < n; i++) {
-        cout << parent[i] << " - " << i << " : " << cost[i][parent[i]] << endl;
+        cout << parent[i] << " - " << i;
+        cout << " : " << cost[i][parent[i]] << endl;
         total += cost[i][parent[i]];
     }
     cout << "Total weight: " << total << endl;

@@ -28,7 +28,8 @@ void kruskal(Edge edges[], int n, int e) {
         int a = find(edges[i].u);
         int b = find(edges[i].v);
         if (a != b) {
-            cout << edges[i].u << " - " << edges[i].v << " : " << edges[i].w << endl;
+            cout << edges[i].u << " - " << edges[i].v;
+            cout << " : " << edges[i].w << endl;
             total += edges[i].w;
             parent[a] = b;
             count++;
